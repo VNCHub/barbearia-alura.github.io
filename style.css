@@ -1,0 +1,276 @@
+/*configurações da main */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* configurações do header */
+header{
+    padding: 0 0 20px 0;
+}
+
+.segunda-nav{
+    background-image: linear-gradient(to bottom, lightgray, rgb(165, 165, 165));
+    vertical-align: middle;
+    padding: 20px 20px;
+    margin: 0 auto;
+    height: 22px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #EFF1F9;
+    text-decoration: underline;
+}
+
+/* configurações do footer */
+footer{
+    padding: 20px;
+    background: url("img/bg.jpg");
+    text-align: center;
+}
+
+.copyright{
+    color: #FFF; 
+}
+
+/* configurações da pagina de produtos */
+.produtos{
+    background: #EFF1F9;
+}
+
+.lista-produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.lista-produtos li{
+    background: white;
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5% ;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px #000 solid;
+    border-radius: 20px;
+}
+
+.lista-produtos li:hover{
+    border-width: 3px;
+    
+}
+
+.lista-produtos li:hover h2{
+    font-size: 32px;
+}
+
+.lista-produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descricao{
+    font-size: 20px;
+}
+
+.preco{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* configurações da pagina de contato */
+.formulario-div{
+    width: 940px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.formulario-contato{
+    margin: 40px 0;
+}
+
+.formulario-contato label, legend, select{
+    display: block;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+    display :block;
+    font-size: 15px;
+    margin: 0 0 10px;
+    padding: 5px 5px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar-contato{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+}
+
+.enviar-contato:hover{
+    background: darkorange;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000;
+    padding: 8px 15px;
+}
+
+/* configurações da pagina inicial */
+
+.banner {
+    width: 100%;
+}
+
+.principal {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0 1em 0;
+    clear: left;
+    text-shadow: 0 10px 5px rgba(0,0,0,0.3);
+}
+
+.principal{
+    background: #fefefe;
+}
+
+.principal p {
+    margin: 0 0 1em 0;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.mapa{
+    background: #fefefe;
+}
+
+.mapa p {
+    text-align: center;
+    margin: 0 0 2em 0;
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.beneficios {
+    background: #fefefe;
+}
+
+.beneficios .titulo-principal{
+    margin: 0 0;
+    padding: 1em 0;
+}
+
+.utensilios {
+    width: 150px; 
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5em;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:before{
+    content: "★ ";
+}
+
+.imagem-beneficios {
+    width: 60%;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.video {
+    background: linear-gradient(#fefefe, #555555);
+}
+
+.video-conteudo {
+    width: 560px;
+    padding: 3em 0;
+    margin: 0 auto;
+}
+
+/* Responsividade pagina Home */
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video-conteudo{
+        width: auto;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    .video-conteudo {
+        margin-bottom: 20px;
+    }
+}
